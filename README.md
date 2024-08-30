@@ -17,3 +17,12 @@ sail artisan test --filter=ValidateSignatureTest
 
 # Docs
 You can find swagger.json in the root folder. To show API documentation, you can open https://editor.swagger.io/ and upload swagger.json content
+
+# API Authenticating
+After you will run DatabaseSeeder, there will be created a user in the database. You can use this user for the /login endpoint
+```json
+{
+    "email": "test@example.com",
+    "password": "password"
+}
+```
